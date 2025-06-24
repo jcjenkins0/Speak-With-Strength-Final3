@@ -1,16 +1,18 @@
-
 document.addEventListener("DOMContentLoaded", function () {
-    const quotes = [
-        "Your voice has power—use it!",
-        "Speak boldly, even if your voice shakes.",
-        "Confidence begins with preparation."
-    ];
-    const tips = [
-        "End with a clear and powerful closing statement.",
-        "Make eye contact to build trust.",
-        "Practice your pauses—they're powerful."
-    ];
+  fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+      const quotes = data.quotes;
+      const tips = data.tips;
 
-    document.getElementById("quote").textContent = "Quote of the Day: " + quotes[Math.floor(Math.random() * quotes.length)];
-    document.getElementById("tip").textContent = "Public Speaking Tip: " + tips[Math.floor(Math.random() * tips.length)];
+      const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+      const randomTip = tips[Math.floor(Math.random() * tips.length)];
+
+      document.getElementById("quote").textContent = "Quote of the Day: " + randomQuote;
+      document.getElementById("tip").textContent = "Public Speaking Tip: " + randomTip;
+    })
+    .catch(error => {
+      console.error("Error loading JSON:", error);
+    });
 });
+
