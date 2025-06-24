@@ -1,0 +1,17 @@
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(to right, #ffeaa7, #fab1a0, #a29bfe);
+    padding: 20px;
+    color: #2d3436;
+}
+nav a {
+    margin: 0 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0984e3;
+}
+.gallery img {
+    width: 150px;
+    margin: 10px;
+}
