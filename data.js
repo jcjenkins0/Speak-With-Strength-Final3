@@ -1,4 +1,4 @@
-{
+const data = {
   "quotes": [
     "Your voice has power, use it!",
     "Speak boldly, even if your voice shakes.",
