@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch(error => {
       console.error("Error loading JSON:", error);
+      document.getElementById("quote").textContent = "Could not load quote.";
+      document.getElementById("tip").textContent = "Could not load tip.";
     });
 });
 
