@@ -5,11 +5,22 @@ body {
     padding: 20px;
     color: #2d3436;
 }
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #ffffffaa;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
 nav a {
-    margin: 0 10px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #0984e3;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0984e3;
+}
+
 }
 .gallery img {
     width: 150px;
